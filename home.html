@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <div class="contain1-div">
+        <div class="flex-1">
+            <div class="logo-div"></div>
+            <div style="flex: 1;"></div>
+                  <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="navigation-bar" class="navigation-bar">
+                <div class="nav-div">Home</div>
+                <div class="nav-div">About us</div>
+                <div class="nav-div">Contacts</div>
+                <div class="nav-div">Restaurants</div>
+            </div>
+        </div>
+
+        <div class="briefing-div">
+            <u><em><h3 style="margin-top: 0; margin-bottom: 4px;">Are you hungry?</h3></em></u>
+            Well I guess it's now eating o'clock! Order now and have your preference of deliciousness delivered to you. Why starve when we are here for you
+        </div>  
+        <button>I wanna Order now</button>      
+    </div>
+        <div class="background-div">
+        <img class="backg-img" src="images/quality.jpg">
+        </div> 
+    <div class="contain2-div">
+        <div class="descr-div">
+            <u><h3>Fast</h3></u>
+            Have your food delivered within 1-2 hours of ordering         
+        </div>
+        <div class="descr-div">
+            <u><h3>Fresh</h3></u>
+            Have your meal served hot and fresh off the oven
+        </div>
+        <div class="descr-div">
+            <u><h3>Free</h3></u>
+            Yes you heard it right! Have your meal freely delivered
+        </div>
+        <div class="deliveryimg-div">
+            <img class="delivery-img" src="images/delivery2.jpg">
+        </div>
+
+    </div> 
+    <div class="contain3-div">
+        <div class="scale-div">
+            <h3 style="margin: 0; margin-bottom: 4px;">For restaurants and stores</h3>
+            Let's scale your business together</div><br>
+        <div class="start-div">Let's do this</div>
+        <div class="handshake-div"><img class="handshake-img" src="images/handshake2.jpg"></div>
+    </div>
+    <div class="footer-div">&copy 2025 Foodie food delivery. All rights reserved</div> 
+      <!-- Script at the end -->
+    <script>
+        function toggleMenu() {
+        const nav = document.getElementById('navigation-bar');
+        nav.classList.toggle('active');
+        }
+
+
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show");
+        }
+      });
+    });
+    const contain2Div= document.querySelector('.contain2-div');
+    observer.observe(contain2Div);
+
+  
+  </script>  
+</body>
+</html>

@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans';
+    color: rgb(82, 35, 35);
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;    
+}
+.contain1-div{
+    background-image: url(images/foodiebackground.jpg);
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    position: relative;
+    
+}
+.flex-1{
+    display: flex;
+    height: 100px;
+    position: relative;
+}
+.logo-div{
+    background-image: url(images/foodielogo.png);
+    background-size: cover; /* Makes the image cover the entire div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    width: 120px;
+    border-radius: 10px;
+}
+.navigation-bar{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-size: 19px;
+    font-weight: medium;
+    font-family: sans-serif;
+    margin-top: 10px;    
+    background-color: rgba(0,0,0, 0.55);
+    max-height: 35px;
+    height: 100%;
+    padding: 10px;
+    gap: 20px;
+    padding-left: 80px;
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 100%;
+    max-width: 400px;
+}
+.nav-div{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-div:hover{
+    text-decoration: underline;
+    padding: 1px;
+}
+/* Hamburger icon */
+.hamburger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 12px;
+    margin-top: 16px;
+}
+
+.hamburger span {
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+.briefing-div{
+    color: azure;
+    margin-left: 40px;
+    margin-top: 110px;
+    width: 380px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 20px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+.briefing-div:hover{
+    box-shadow: 8px 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+button{
+    margin-top: 5px;
+    margin-left: 40px;
+    background-color: rgba(0, 118, 0, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 25px;
+    box-shadow: 8px 3px 8px 0 rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    border-color: #e3e3e3;
+    border-width: 1px;
+    transition: 0.35s;
+}
+button:hover{
+    background-color: #ffffff;
+    color: rgba(0, 118, 0, 0.8);
+    border-color: rgba(0, 118, 0, 0.6);
+    border-width: 1.2px;
+}
+button:active{
+    opacity: 0.5;
+    margin-top: 6px;
+    margin-left: 41px;
+}
+.contain2-div{
+    display: flex;
+    height: 270px;
+    background: linear-gradient(to right, transparent 0%, transparent 50%, #ffffff 100%);
+    align-items: center;
+    justify-content: medium center;
+    gap: 90px;
+          opacity: 0;
+      transform: translateY(100px);
+      transition: all 0.6s ease-out;
+
+}
+.contain2-div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.descr-div{
+    height: 150px;
+    max-width: 250px;
+    width: 100%;
+    background: linear-gradient(to right, #e3e3e3, #ffffff);
+    padding: 8px;
+    margin-left: 15px;
+    box-shadow: -12px 1px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.deliveryimg-div{
+    background: transparent;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+.delivery-img{
+    background: transparent;  /* Make sure image has no background color */
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.background-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;  
+}
+.backg-img{
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 200px;
+}
+.contain3-div{
+    clip-path: ellipse(100% 100% at 50% 100%);
+    background-color: black;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 32px;
+    color: rgb(169, 84, 84);
+}
+.scale-div{
+    padding: 40px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.start-div{
+    border: 1px solid #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.start-div:hover{
+    margin-bottom: 1.5px;
+    text-decoration: underline;
+    text-decoration-color: rgb(94, 94, 94);
+    text-decoration-thickness: 0.2px;
+    text-underline-offset: 4px;
+    background-color: #ffffff;
+    color: black;
+}
+.handshake-img{
+    max-width: 300px;
+    width: 100%;
+}
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: #ffffff;
+    font-family: Calibri;
+    font-size: large;
+    background-color: rgb(86, 86, 86);
+}
+@media (max-width: 768px) {
+  .navigation-bar {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+  }
+    .navigation-bar.active{
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0.65);
+        padding: 0;
+        clip-path: none;
+        width: 150px;
+        max-height: 900px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .contain1-div{
+        width: 100%;
+    }
+
+    .briefing-div {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .contain2-div {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .deliveryimg-div{
+        background: transparent;
+        width: 100%;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.9);
+
+    }
+    .deliveryimg-div.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .delivery-img{
+        background: transparent; 
+    }
+
+    .contain3-div {
+        clip-path: ellipse(100% 100% at 50% 100%);
+        height: 700px;
+    }
+    .descr-div{
+        margin: 0;
+    }
+    .footer-div{
+        width: 100%;
+    }
+}
+@media (min-width: 769px) {
+    .hamburger {
+    display: none;
+    }
+}
